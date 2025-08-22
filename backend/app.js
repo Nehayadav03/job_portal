@@ -52,4 +52,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(frontendPath, "index.html"));
 });
 
+export const PORT = process.env.PORT || 4000;
+
+
 export default app;
