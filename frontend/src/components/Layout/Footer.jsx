@@ -10,10 +10,9 @@ function Footer() {
     <footer className= {isAuthorized ? "footerShow" : "footerHide"}>
 <div>&copy; All Rights Reserved by Neha | CareerConnect</div>
 <div>
-  <Link to={'https://github.com/preetisharma383/job-portal-react'} target='github'><FaGithub></FaGithub></Link>
-  <Link to={'https://leetcode.com/u/preeti4794225/'} target='leetcode'><SiLeetcode></SiLeetcode></Link>
-  <Link to={'https://www.linkedin.com/in/preeti-sharma-174908336/'} target='linkedin'><FaLinkedin></FaLinkedin></Link>
-  <Link to={'https://www.instagram.com/preetii.13__/'} target='instagram'><RiInstagramFill></RiInstagramFill></Link>
+  <Link to={'https://github.com/Nehayadav03/job_portal'} target='github'><FaGithub></FaGithub></Link>
+  <Link to={'https://leetcode.com/u/neha_yadav09555/'} target='leetcode'><SiLeetcode></SiLeetcode></Link>
+  <Link to={'https://www.linkedin.com/in/neha-yadav-619477258/'} target='linkedin'><FaLinkedin></FaLinkedin></Link>
 </div>
       
     </footer>
