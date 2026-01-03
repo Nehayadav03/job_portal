@@ -16,7 +16,8 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
     return next(new ErrorHandler("Resume File Required!", 400));
   }
 
-  const { resume } = req.files;
+  const file = req.files.resume;
+  const filePath=file.tempFilePath;
   const allowedFormats = ["image/png", "image/jpeg", "image/webp",
      "application/pdf",
   "application/msword",
@@ -30,7 +31,10 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
   
   try {
     const cloudinaryResponse = await cloudinary.uploader.upload(
-      resume.tempFilePath
+      filePath,{
+        folder: "resumes",          // all resumes stored in "resumes" folder
+    resource_type: "auto",  
+      }
     );
 
     if (!cloudinaryResponse || cloudinaryResponse.error) {
