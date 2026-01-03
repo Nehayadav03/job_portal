@@ -30,9 +30,7 @@ To get a local copy up and running follow these simple steps.
 ### Installation
 
 1. Clone the repo:
-   ```sh
-   git clone https://github.com/preetisharma383/react-job-portal.git
-   ```
+  
 2. Install NPM packages:
 
    ```sh
@@ -88,8 +86,3 @@ Contributions are what make the open-source community such an amazing place to l
 
 ## Please give a star ⭐ to the repository if you like it.
 
-## Contact
-
-Preeti Sharma - [GitHub](https://github.com/preetisharma383/job-portal-react)
-
-Project Link: [https://github.com/preetisharma383/job-portal-react](https://github.com/preetisharma383/job-portal-react.git)
